@@ -26,8 +26,7 @@
     "pg": "^8.5.1",
     "typescript": "^4.2.2"
   },
-  "devDependencies": {
-    "@types/webpack": "^4.4.0",
+  "devDependencies": {   
     "concurrently": "^3.5.0",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
