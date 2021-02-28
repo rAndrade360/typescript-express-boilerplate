@@ -16,7 +16,10 @@ class App {
   }
 
   private middlewares(){
-    this.app.use(cors());
+    this.app.use(cors({
+    origin: "https://estudosbiblicos.netlify.app",
+    optionsSuccessStatus: 200 
+    }));
     this.app.use(express.json());
     this.app.use(routes);
   }
