@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import express from 'express';
 import routes from './routes';
+import cors from 'cors';
 
 
 class App {
@@ -10,10 +11,12 @@ class App {
 
   constructor(){
     this.app = express();
+    
     this.middlewares();
   }
 
   private middlewares(){
+    this.app.use(cors());
     this.app.use(express.json());
     this.app.use(routes);
   }

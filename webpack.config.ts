@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 const config: webpack.Configuration = {
-  entry: './src/index.ts',
+  entry: './src/server.ts',
   module: {
     rules: [
       {
